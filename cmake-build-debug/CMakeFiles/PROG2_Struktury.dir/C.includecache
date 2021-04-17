@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/WIN10/Desktop/FEI/4.semeter/PROG2/Cvicenie9/PROG2-Struktury/main.c
+stdio.h
+-
+math.h
+-
+
