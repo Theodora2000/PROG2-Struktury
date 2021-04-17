@@ -4,20 +4,16 @@ struct complex
 {
     int real, img;
 };
-
+void vypis(struct complex *k){
+    printf("%d + %di", k->real, k->img);
+}
 int main()
 {
-    struct complex a,b,c;
+    struct complex a;
 
-    printf("Enter a and b where a + ib is the first complex number.\n");
-    scanf("%d%d", &a.real, &a.img);
-    printf("Enter a and b where a + ib is the first complex number.\n");
-    scanf("%d%d", &b.real, &b.img);
-
-   c.real = a.real+b.real;
-   c.img = a.img + b.img;
-
-    printf("%d + %d i", c.real, c.img);
+    a.real = 4;
+    a.img=1;
+    vypis(&a);
 
     return 0;
 }
