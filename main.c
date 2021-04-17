@@ -7,17 +7,17 @@ struct complex
 
 int main()
 {
-    struct complex a, b, c;
+    struct complex a,b,c;
 
     printf("Enter a and b where a + ib is the first complex number.\n");
     scanf("%d%d", &a.real, &a.img);
+    printf("Enter a and b where a + ib is the first complex number.\n");
+    scanf("%d%d", &b.real, &b.img);
 
-    float koren, absolutna;
+   c.real = a.real+b.real;
+   c.img = a.img + b.img;
 
-    koren = sqrt(pow(a.real, 2)+pow(a.img, 2));
-    absolutna = abs(koren);
-
-    printf("Absolutna hodnota: %.1f", absolutna);
+    printf("%d + %d i", c.real, c.img);
 
     return 0;
 }
